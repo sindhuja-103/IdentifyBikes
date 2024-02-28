@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="17" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-28T13:32:15 IST" name="Suite" finished-at="2024-02-28T13:34:10 IST" duration-ms="115188">
+    <groups>
+      <group name="regression">
+        <method signature="Tc1_UpcomingBikesTest.manufacturerType()[pri:3, instance:testclasses.Tc1_UpcomingBikesTest@70e9c95d]" name="manufacturerType" class="testclasses.Tc1_UpcomingBikesTest"/>
+        <method signature="Tc1_UpcomingBikesTest.scrollBikes()[pri:4, instance:testclasses.Tc1_UpcomingBikesTest@70e9c95d]" name="scrollBikes" class="testclasses.Tc1_UpcomingBikesTest"/>
+        <method signature="Tc1_UpcomingBikesTest.sortBikesPrices()[pri:5, instance:testclasses.Tc1_UpcomingBikesTest@70e9c95d]" name="sortBikesPrices" class="testclasses.Tc1_UpcomingBikesTest"/>
+        <method signature="Tc2_PopularCars.getPopularCarsData()[pri:4, instance:testclasses.Tc2_PopularCars@7b36aa0c]" name="getPopularCarsData" class="testclasses.Tc2_PopularCars"/>
+        <method signature="Tc3_LoginPage.setEmailData()[pri:3, instance:testclasses.Tc3_LoginPage@5824a83d]" name="setEmailData" class="testclasses.Tc3_LoginPage"/>
+        <method signature="Tc3_LoginPage.clickNext()[pri:4, instance:testclasses.Tc3_LoginPage@5824a83d]" name="clickNext" class="testclasses.Tc3_LoginPage"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="Tc1_UpcomingBikesTest.NewBikes()[pri:1, instance:testclasses.Tc1_UpcomingBikesTest@70e9c95d]" name="NewBikes" class="testclasses.Tc1_UpcomingBikesTest"/>
+        <method signature="Tc1_UpcomingBikesTest.upcomingBikes()[pri:2, instance:testclasses.Tc1_UpcomingBikesTest@70e9c95d]" name="upcomingBikes" class="testclasses.Tc1_UpcomingBikesTest"/>
+        <method signature="Tc2_PopularCars.navigateHome()[pri:1, instance:testclasses.Tc2_PopularCars@7b36aa0c]" name="navigateHome" class="testclasses.Tc2_PopularCars"/>
+        <method signature="Tc2_PopularCars.hoverOnCars()[pri:2, instance:testclasses.Tc2_PopularCars@7b36aa0c]" name="hoverOnCars" class="testclasses.Tc2_PopularCars"/>
+        <method signature="Tc2_PopularCars.clickChennai()[pri:3, instance:testclasses.Tc2_PopularCars@7b36aa0c]" name="clickChennai" class="testclasses.Tc2_PopularCars"/>
+        <method signature="Tc3_LoginPage.loginPage()[pri:1, instance:testclasses.Tc3_LoginPage@5824a83d]" name="loginPage" class="testclasses.Tc3_LoginPage"/>
+        <method signature="Tc3_LoginPage.signInWithGoogle()[pri:2, instance:testclasses.Tc3_LoginPage@5824a83d]" name="signInWithGoogle" class="testclasses.Tc3_LoginPage"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-02-28T13:32:15 IST" name="ChromeTest" finished-at="2024-02-28T13:34:10 IST" duration-ms="115188">
+      <class name="testclasses.Tc3_LoginPage">
+        <test-method signature="loginPage()[pri:1, instance:testclasses.Tc3_LoginPage@5824a83d]" started-at="2024-02-28T13:33:40 IST" name="loginPage" finished-at="2024-02-28T13:33:50 IST" duration-ms="10593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method signature="signInWithGoogle()[pri:2, instance:testclasses.Tc3_LoginPage@5824a83d]" started-at="2024-02-28T13:33:51 IST" name="signInWithGoogle" finished-at="2024-02-28T13:33:54 IST" depends-on-methods="testclasses.Tc3_LoginPage.loginPage" duration-ms="2574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInWithGoogle -->
+        <test-method signature="setEmailData()[pri:3, instance:testclasses.Tc3_LoginPage@5824a83d]" started-at="2024-02-28T13:33:55 IST" name="setEmailData" finished-at="2024-02-28T13:34:01 IST" depends-on-methods="testclasses.Tc3_LoginPage.signInWithGoogle" duration-ms="5606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setEmailData -->
+        <test-method signature="clickNext()[pri:4, instance:testclasses.Tc3_LoginPage@5824a83d]" started-at="2024-02-28T13:34:01 IST" name="clickNext" finished-at="2024-02-28T13:34:08 IST" depends-on-methods="testclasses.Tc3_LoginPage.setEmailData" duration-ms="6983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNext -->
+      </class> <!-- testclasses.Tc3_LoginPage -->
+      <class name="testclasses.Tc1_UpcomingBikesTest">
+        <test-method is-config="true" signature="driverSetUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testclasses.Tc1_UpcomingBikesTest@70e9c95d]" started-at="2024-02-28T13:32:16 IST" name="driverSetUp" finished-at="2024-02-28T13:32:47 IST" duration-ms="31036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.zigwheels.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetUp -->
+        <test-method signature="NewBikes()[pri:1, instance:testclasses.Tc1_UpcomingBikesTest@70e9c95d]" started-at="2024-02-28T13:32:47 IST" name="NewBikes" finished-at="2024-02-28T13:32:50 IST" duration-ms="2848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewBikes -->
+        <test-method signature="upcomingBikes()[pri:2, instance:testclasses.Tc1_UpcomingBikesTest@70e9c95d]" started-at="2024-02-28T13:32:51 IST" name="upcomingBikes" finished-at="2024-02-28T13:32:53 IST" depends-on-methods="testclasses.Tc1_UpcomingBikesTest.NewBikes" duration-ms="1801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upcomingBikes -->
+        <test-method signature="manufacturerType()[pri:3, instance:testclasses.Tc1_UpcomingBikesTest@70e9c95d]" started-at="2024-02-28T13:32:53 IST" name="manufacturerType" finished-at="2024-02-28T13:33:03 IST" depends-on-methods="testclasses.Tc1_UpcomingBikesTest.upcomingBikes" duration-ms="9836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manufacturerType -->
+        <test-method signature="scrollBikes()[pri:4, instance:testclasses.Tc1_UpcomingBikesTest@70e9c95d]" started-at="2024-02-28T13:33:04 IST" name="scrollBikes" finished-at="2024-02-28T13:33:05 IST" depends-on-methods="testclasses.Tc1_UpcomingBikesTest.manufacturerType" duration-ms="549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollBikes -->
+        <test-method signature="sortBikesPrices()[pri:5, instance:testclasses.Tc1_UpcomingBikesTest@70e9c95d]" started-at="2024-02-28T13:33:05 IST" name="sortBikesPrices" finished-at="2024-02-28T13:33:19 IST" depends-on-methods="testclasses.Tc1_UpcomingBikesTest.scrollBikes" duration-ms="13492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortBikesPrices -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclasses.Tc1_UpcomingBikesTest@70e9c95d]" started-at="2024-02-28T13:34:08 IST" name="tearDown" finished-at="2024-02-28T13:34:10 IST" duration-ms="1768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testclasses.Tc1_UpcomingBikesTest -->
+      <class name="testclasses.Tc2_PopularCars">
+        <test-method signature="navigateHome()[pri:1, instance:testclasses.Tc2_PopularCars@7b36aa0c]" started-at="2024-02-28T13:33:19 IST" name="navigateHome" finished-at="2024-02-28T13:33:24 IST" duration-ms="4654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateHome -->
+        <test-method signature="hoverOnCars()[pri:2, instance:testclasses.Tc2_PopularCars@7b36aa0c]" started-at="2024-02-28T13:33:25 IST" name="hoverOnCars" finished-at="2024-02-28T13:33:27 IST" depends-on-methods="testclasses.Tc2_PopularCars.navigateHome" duration-ms="1759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnCars -->
+        <test-method signature="clickChennai()[pri:3, instance:testclasses.Tc2_PopularCars@7b36aa0c]" started-at="2024-02-28T13:33:28 IST" name="clickChennai" finished-at="2024-02-28T13:33:37 IST" depends-on-methods="testclasses.Tc2_PopularCars.hoverOnCars" duration-ms="9694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickChennai -->
+        <test-method signature="getPopularCarsData()[pri:4, instance:testclasses.Tc2_PopularCars@7b36aa0c]" started-at="2024-02-28T13:33:38 IST" name="getPopularCarsData" finished-at="2024-02-28T13:33:40 IST" depends-on-methods="testclasses.Tc2_PopularCars.clickChennai" duration-ms="1761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPopularCarsData -->
+      </class> <!-- testclasses.Tc2_PopularCars -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

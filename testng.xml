@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="utilities.ExtentReportManager"></listener>
+</listeners>
+  <test thread-count="5"  name="ChromeTest">
+  <parameter name="os" value="windows"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name ="url" value="https://www.zigwheels.com/"></parameter>
+  <groups>
+  	<run>
+  		<include name="smoke"></include>
+  		<include name="sanity"></include>
+  		<include name="regression"></include>
+  	</run>
+  </groups>
+    <classes>
+      <class name="testclasses.Tc1_UpcomingBikesTest"/>
+      <class name="testclasses.Tc2_PopularCars"/>
+      <class name="testclasses.Tc3_LoginPage"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ <!--   <test thread-count="5" name="EdgeTest">
+  <parameter name="browser" value="edge"></parameter>
+  <parameter name ="url" value="https://www.zigwheels.com/"></parameter>
+  <groups>
+  	<run>
+  		<include name="sanity"></include>
+  	</run>
+  </groups>
+    <classes>
+      <class name="testclasses.Tc1_UpcomingBikesTest"/>
+      <class name="testclasses.Tc2_PopularCars"/>
+      <class name="testclasses.Tc3_LoginPage"/>
+    </classes>
+  </test>--> <!-- Test -->
+</suite> <!-- Suite -->
